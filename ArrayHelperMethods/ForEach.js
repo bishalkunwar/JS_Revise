@@ -25,5 +25,37 @@ console.log(sum);
 // loop over the array, incrementing the sum variable.
 
 
+const students = {
+    name: 'bishal', 
+    age: 23
+}
 
-// For in VS for of and then for each
+Object.entries(students).forEach((item)=>{
+    const[key, value] = item;
+    console.log(`Key: ${key} :: value: ${value}`);
+})
+
+
+
+
+const studentss = [
+    {
+        name: 'bishal',
+        age: 29
+    },
+    {
+        name: 'amit',
+        age: 30
+    }
+];
+
+studentss.forEach((stud, index)=>{
+    console.log(`Student -> ${index+1}`)
+    Object.entries(stud).forEach((data)=>{
+        const[key,value] = data;
+        console.log(`Key: ${key}, value: ${value}`)
+    })
+});
+
+
+
