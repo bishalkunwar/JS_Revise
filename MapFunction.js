@@ -39,3 +39,10 @@ console.log(carDetails[0]);
 console.log(carDetails[0][1]);
 
 
+// if we want to return the arrayMapped data as an object, then we will have to do aslike below:->
+const carMappedObj = cars.map((car2, index)=>{
+    const[carIndex, carModel, carPrice] = [index, car2.model, car2.price];
+    return{index: carIndex, model: carModel, carPrice};
+});
+
+console.log(carMappedObj);
