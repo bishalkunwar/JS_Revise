@@ -38,13 +38,13 @@ Object.entries(students).forEach((item)=>{
 
 const marks = {math: 13, science: 14};
 
-for(let key in marks){
-    console.log(key);
-    console.log(marks[key]);
-} 
+// for(let key in marks){
+//     console.log(key);
+//     console.log(marks[key]);
+// } 
 
-for (let k of marks){
-    console.log(k);
+for (let value of marks){
+    console.log(value);
 };
 
 
