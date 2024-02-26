@@ -17,3 +17,25 @@ console.log(doubledNumbers);
 console.log(doubled);
 
 
+// arrayMap in case of objects inside an array.
+var cars = [
+    {model: 'Buick', price: 'Cheap'},
+    {model: 'Ram', price: 'Expensive'}
+];
+
+const prices = cars.map(function(car){
+    return car.price;
+});
+
+console.log(prices);
+
+
+const carDetails = cars.map((car1, index)=>{
+   return[index, car1.model, car1.price];
+});
+
+console.log(carDetails);
+console.log(carDetails[0]);
+console.log(carDetails[0][1]);
+
+
