@@ -21,3 +21,23 @@ const letsFind =()=> users.find(function(user){
 });
 
 console.log(letsFind());
+
+
+// find helper real case scenario:->
+const posts = [
+    {id: 1, title: "New Era"},
+    {id: 2, title: "Old Era"}
+];
+
+const comments = [
+    {postId: 1, comment: "Nice One"},
+    {postId: 2, comment: "Not Nice One"}
+];
+
+const cmtFind = function PostAtComment(posts, comments){
+    return comments.find(function(comment){
+        return comment.postId === posts[0].id;
+    });
+};
+
+console.log(cmtFind(posts,comments));
